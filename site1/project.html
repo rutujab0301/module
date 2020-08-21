@@ -16,25 +16,7 @@
 		position: relative;
 	}
 
-  	.row{
-  		width:100%;
-  	}
-  @media (min-width: 1200px){
-    .parent-div{
-      float:left;
-    }
-  }
-  @media (min-width:950px) and (max-width:1199px)   {
-    .parent-div, .parent-div1{
-      float:left;
-    }
-    .parent-div{
-      width:50%;
-    }
-    .parent-div1{
-      width:100%
-    }
-  }
+  	
 	#parent{
 		position: relative;
 		padding:10px;
@@ -64,7 +46,7 @@
     }
   
 	.parent-div{
-		width: 400px;
+		width: 440px;
 		height: 250px;
 		position: relative;
     border: 2px solid black;
@@ -73,14 +55,36 @@
 	.parent-div .child-div{
     margin: 180px;
     position: relative;
-    bottom:364px;
-    left: 117px;
+    bottom:346px;
+    left: 157px;
 	  width: 100px;
     height:30px;
 	  border: 2px solid black;
 	  text-align: center;
     
 	}
+  .row{
+  		width:100%;
+  	}
+  @media (min-width: 992px){
+    .parent-div{
+      float:left;
+      
+    }
+    
+  
+    @media (min-width:768px) and (max-width:991px)   { .parent-div, .parent-div1{
+      float:left;
+      }
+    
+    .parent-div{
+      width:50%;
+    }
+    .parent-div1{
+      width:100%
+    }
+    
+  }
 	
 
 
