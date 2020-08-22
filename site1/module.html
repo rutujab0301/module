@@ -4,6 +4,9 @@
 	<title>Module 2 Assignment</title>
 </head>
 <style type="text/css">
+	*{
+		border-style: border-style;
+	}
 	body{
 		padding:20px;
 		position: relative;
@@ -12,60 +15,101 @@
 		text-align: center;
 		position: relative;
 	}
-  
+
+  	
 	#parent{
 		position: relative;
-		padding: 10px;
+		padding:10px;
 		top:40px;
 		overflow:visible;
 	}
-  #child{
+    #child1{
     text-align:center;
     position:relative;
     bottom:18px;
     font-size:22px;
-    
-  }
+    background-color: #FFC0CB;
+    }
+    #child2{
+    text-align:center;
+    position:relative;
+    bottom:18px;
+    font-size:22px;
+    background-color: #FF0000;
+    }
+    #child3{
+    text-align:center;
+    position:relative;
+    bottom:18px;
+    font-size:22px;
+    background-color: #FFFF00;
+    }
+  
 	.parent-div{
-		width: 500px;
-		height: 200px;
+		width: 440px;
+		height: 250px;
 		position: relative;
     border: 2px solid black;
+    margin:20px;
 	}
 	.parent-div .child-div{
-    margin: 194px;
+    margin: 180px;
     position: relative;
-    bottom:360px;
-    left: 199px;
+    bottom:346px;
+    left: 157px;
 	  width: 100px;
     height:30px;
-	  border: 2px solid blue;
+	  border: 2px solid black;
 	  text-align: center;
-    padding: 2px;
+    
 	}
+  .row{
+  		width:100%;
+  	}
+  @media (min-width: 992px){
+    .parent-div{
+      float:left;
+      
+    }
+    
+  
+    @media (min-width:768px) and (max-width:991px)   { .parent-div, .parent-div1{
+      float:left;
+      }
+    
+    .parent-div{
+      width:50%;
+    }
+    .parent-div1{
+      width:100%
+    }
+    
+  }
 	
 
 
 </style>
 <body>
 	<h1>Our Menu</h1>
-	<div class="parent-div">
+	<div class="row">
+	  <div class="parent-div">
 		<p id="parent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<div class="child-div">
-			<p id="child">Chicken</p>
+			<p id="child1">Chicken</p>
 		</div>
-	</div>
-	<div class="parent-div">
+	  </div>
+	  <div class="parent-div">
 		<p id="parent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<div class="child-div">
-			<p id="child">Beef</p>
+			<p id="child2">Beef</p>
 		</div>
-	</div>
-	<div class="parent-div">
+	  </div>
+	  <div class="parent-div parent-div1">
 		<p id="parent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<div class="child-div">
-			<p id="child">Sushi</p>
+			<p id="child3">Sushi</p>
 		</div>
+	  </div>
 	</div>
 </body>
 </html>
